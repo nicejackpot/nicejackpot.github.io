@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>9월 26일 토요일 나들이 코스</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Pretendard', 'Apple SD Gothic Neo', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; background:#EDF0F4; color:#14171C;
+          -webkit-text-size-adjust:100%; line-height:1.5;
+          padding:20px 16px 48px; }
+  .wrap { max-width:560px; margin:0 auto; }
+  .option { margin-bottom:18px; }
+  summary { cursor:pointer; background:white; border-radius:16px; padding:20px; list-style:none; border:1px solid #D8DFE8; }
+  summary::-webkit-details-marker { display:none; }
+  summary:focus-visible { outline:3px solid #2a78d6; outline-offset:3px; }
+  .option-intro { padding:16px 8px; }
+  header { padding:4px 4px 18px; }
+  .kicker { font-size:11px; font-weight:700; letter-spacing:.16em; color:#7C8593; }
+  h1 { font-size:24px; font-weight:800; letter-spacing:-.02em; margin-top:6px;
+        word-break:keep-all; }
+  .headmeta { margin-top:8px; font-size:13px; font-weight:600; color:#6E7683; }
+  .headmeta span + span::before { content:'·'; margin:0 6px; color:#B4BCC7; }
+
+  section { background:#FFF; border-radius:16px; padding:18px; margin-bottom:14px;
+             box-shadow:0 1px 2px rgba(20,23,28,.05), 0 6px 16px rgba(20,23,28,.06);
+             overflow:hidden; }
+  .shead { display:flex; align-items:center; gap:10px; margin-bottom:10px; }
+  .chip { flex:0 0 auto; font-size:12px; font-weight:800; padding:3px 10px;
+           border-radius:999px; border:1px solid; }
+  .dist { flex:1 1 auto; min-width:0; font-size:12px; font-weight:600; color:#828B98;
+           text-align:right; overflow:hidden; text-overflow:ellipsis;
+           white-space:nowrap; }
+  h2 { font-size:21px; font-weight:800; letter-spacing:-.02em; line-height:1.3;
+        word-break:keep-all; overflow-wrap:anywhere; }
+  .cat { margin-top:3px; font-size:13px; font-weight:600; color:#828B98; }
+  .must { margin-top:10px; font-size:15px; color:#3C434F; font-weight:500;
+           word-break:keep-all; overflow-wrap:anywhere; }
+  .tags { margin-top:10px; display:flex; flex-wrap:wrap; gap:6px; }
+  .tag { font-size:12px; font-weight:700; color:#5C6472; background:#F1F3F7;
+          border-radius:7px; padding:4px 9px; display:inline-block;
+          margin:0 5px 5px 0; }
+  .tag.kid { color:#2F6F52; background:#2F6F5212; }
+
+  .rows { margin-top:14px; border-top:1px solid #EBEEF3; }
+  .r { display:flex; gap:12px; padding:11px 0; border-bottom:1px solid #EBEEF3;
+        align-items:flex-start; }
+  .r:last-child { border-bottom:none; }
+  .k { flex:0 0 68px; font-size:13px; font-weight:700; color:#8A929E;
+        padding-top:1px; }
+  .v { flex:1 1 auto; min-width:0; font-size:14.5px; font-weight:500;
+        word-break:break-word; overflow-wrap:anywhere; }
+  .v .sub { font-size:13px; color:#7C8593; font-weight:500; }
+  .tel { color:#1F5FD0; font-weight:700; text-decoration:none; }
+
+  /* 아이 적합 기여도 그래프 — 단일 색상, 항목별 직접 라벨, 눈금선 없음 */
+  .kscore { font-size:20px; font-weight:800; letter-spacing:-.02em; }
+  .kscore .sub { font-size:13px; font-weight:600; }
+  .kscore.none { font-size:15px; font-weight:700; color:#7C8593; }
+  .knote { margin-top:5px; font-size:12.5px; color:#7C8593; line-height:1.45;
+            word-break:keep-all; }
+  .kbars { margin-top:10px; display:flex; flex-direction:column; gap:9px; }
+  .khead { display:flex; justify-content:space-between; align-items:baseline;
+            gap:10px; margin-bottom:4px; }
+  .klabel { min-width:0; font-size:13px; font-weight:600; color:#3C434F;
+             overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .kpts { flex:0 0 auto; font-size:12.5px; font-weight:800; color:#525A67; }
+  .track { height:8px; border-radius:4px; background:#cde2fb; }
+  .fill { height:8px; border-radius:4px; background:#2a78d6; }
+
+  /* 리뷰 사진 격자 (390px에서 3열) + 출처 표기 */
+  .gwrap { margin-top:16px; }
+  .ghead { font-size:13px; font-weight:700; color:#8A929E; margin-bottom:8px;
+            display:flex; justify-content:space-between; align-items:baseline;
+            gap:8px; }
+  .ghint { font-size:11.5px; font-weight:600; color:#A6ADB8; }
+  .grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:7px; }
+  .gcell { display:block; min-width:0; text-decoration:none; }
+  /* 링크가 걸린 사진만 눌리는 느낌을 준다. 링크 없는 사진은 커서·피드백 없음 */
+  a.gcell { cursor:pointer; -webkit-tap-highlight-color:transparent; }
+  a.gcell img { transition:transform .08s ease, opacity .08s ease; }
+  a.gcell:active img { transform:scale(.96); opacity:.8; }
+  div.gcell { cursor:default; }
+  .go { margin-left:3px; font-size:10px; }
+  .gcell img { width:100%; aspect-ratio:1/1; object-fit:cover; display:block;
+                border-radius:9px; background:#E7EBF2;
+                image-orientation:from-image; }
+  .credit { display:block; margin-top:3px; font-size:10.5px; color:#8A929E;
+             overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  a.gcell .credit { color:#1F5FD0; }
+
+  ul.ev { list-style:none; margin-top:6px; }
+  ul.ev li { font-size:13.5px; color:#3C434F; padding:2px 0 2px 12px;
+              position:relative; word-break:keep-all; overflow-wrap:anywhere; }
+  ul.ev li::before { content:'·'; position:absolute; left:2px; color:#98A1AE; }
+
+  ul.menu { list-style:none; }
+  ul.menu li { display:flex; justify-content:space-between; gap:12px;
+                padding:3px 0; }
+  ul.menu li span { min-width:0; word-break:keep-all; overflow-wrap:anywhere; }
+  ul.menu li b { flex:0 0 auto; font-weight:700; white-space:nowrap; }
+
+  /* 지도 버튼 2개. naver_url이 없으면 카카오 하나가 폭을 다 쓴다 */
+  .maps { display:flex; gap:8px; margin-top:14px; }
+  .mbtn { flex:1 1 0; min-width:0; text-align:center; padding:14px 10px;
+           border-radius:11px; font-size:14.5px; font-weight:800;
+           text-decoration:none; -webkit-tap-highlight-color:transparent; }
+  .mbtn.kakao { background:#FEE500; color:#14171C; }   /* 카카오 브랜드 옐로 */
+  .mbtn.naver { background:#06803E; color:#FFF; }      /* 흰 글자 대비 5.4:1 */
+  .mbtn:active { opacity:.82; }
+  footer { padding:10px 4px; text-align:center; font-size:12px; color:#98A1AE;
+            font-weight:600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">WEEKEND FAMILY PICKS</div>
+    <h1>9월 26일 토요일 나들이 코스</h1>
+    <div class="headmeta"><span>만수역 출발</span><span>완성 코스 4개 중 선택</span></div>
+  </header>
+  <details class='option' id='option-1' open><summary><span class='cat'>01 · 실내 · 관람·배움</span><h2>국립생물자원관 코스</h2><span class='knote'>눌러서 코스 상세 보기</span></summary><div class='option-intro'><p class='must'>귀가 포함 약 55분 · 도로 기준 추정 · 실시간 정체 미반영</p><p>09~18시 21~27°C · 강수확률 최대 0%</p><p class='knote'>기상청 단기예보 · 조회 2026-09-26T07:01:45+09:00</p><p>PM10 13 · PM2.5 6µg/m³</p><p class='knote'>에어코리아 연희 · 관측 2026-09-26 06:00</p><p class='knote'>· 활동 10:30 · 식사 12:30 · 카페 15:00 도착 제안 시각 기준으로 영업시간 확인 · 체류시간·정체에 따라 조정 필요</p><p class='knote'>· 영업시간은 지도 등록 정보 기준 · 임시휴무·현장 대기·잔여 예약석은 실시간 확인되지 않음</p></div><section>
+    <div class="shead"><span class="chip" style="color:#2F6F52">활동 10:30</span>
+      <span class="dist">만수역에서 도로 18.2km · 약 24분</span></div>
+    <h2>국립생물자원관</h2>
+    <div class="cat">전시관</div>
+    <p class="must">전시 관람하기 · 체험 프로그램은 별도 운영 확인</p>
+    <div class="rows"><div class='r'><div class='k'>방문일 영업</div><div class='v'>09:30 ~ 17:30</div></div><div class='r'><div class='k'>주소</div><div class='v'>인천 서해구 환경로 42 종합환경연구단지 내 (경서동)</div></div><div class='r'><div class='k'>전화</div><div class='v'><a class='tel' href='tel:032-590-7000'>032-590-7000</a></div></div><div class='r'><div class='k'>주차</div><div class='v'>주차 가능 (무료)<br><span class='sub'>실외 무료주차장 이용 가능, 주차 무료</span></div></div><div class='r'><div class='k'>리뷰 지표</div><div class='v'>카카오 ★4.5 · 리뷰 30 · 블로그 300 · 사진 1,872 · 인기도 67</div></div><div class='r'><div class='k'>아이</div><div class='v'><span class='tag kid'>아이와체험</span><span class='tag kid'>아이와함께</span><span class='tag kid'>어린이도서관</span><span class='tag kid'>어린이박물관</span><span class='tag kid'>어린이전시</span><span class='tag kid'>어린이체험</span></div></div><div class='r'><div class='k'>장소 특징</div><div class='v'><span class='tag'>미디어아트</span><span class='tag'>비올때아이랑</span><span class='tag'>실내정원</span><span class='tag'>전시공간</span><span class='tag'>포토존</span><span class='tag'>현장체험학습</span></div></div><div class='r'><div class='k'>취향 적합</div><div class='v'><div class='kscore'><b>65</b><span class='sub'> / 100</span></div><div class='kbars'><div class='krow'><div class='khead'><span class='klabel'>체험</span><span class='kpts'>28점</span></div><div class='track'><div class='fill' style='width:28%'></div></div></div><div class='krow'><div class='khead'><span class='klabel'>기본점수</span><span class='kpts'>25점</span></div><div class='track'><div class='fill' style='width:25%'></div></div></div><div class='krow'><div class='khead'><span class='klabel'>관련 요소 (어린이박물관, 박물관, 전시관)</span><span class='kpts'>12점</span></div><div class='track'><div class='fill' style='width:12%'></div></div></div></div><div class='knote'>초2 취향 키워드 점수 · 시설 안전성·이용 가능 확률을 뜻하지 않음</div></div></div><div class='r'><div class='k'>아이 근거</div><div class='v'><ul class='ev'><li>태그: 아이와체험</li><li>태그: 아이와함께</li><li>태그: 어린이도서관</li><li>태그: 어린이박물관</li></ul></div></div></div>
+    <p class='knote'><a href='https://place.map.kakao.com/10145688#review' target='_blank' rel='noopener noreferrer'>사진·후기는 카카오맵 원문에서 보기 ↗</a></p><div class='maps'><a class='mbtn kakao' href='https://place.map.kakao.com/10145688' target='_blank' rel='noopener noreferrer'>카카오맵</a><a class='mbtn naver' href='https://m.place.naver.com/place/12338771/home' target='_blank' rel='noopener noreferrer'>네이버 지도</a></div>
+  </section><section>
+    <div class="shead"><span class="chip" style="color:#A85A1E">식사 12:30</span>
+      <span class="dist">앞 코스에서 도로 5.6km · 약 10분</span></div>
+    <h2>청라우사미</h2>
+    <div class="cat">한식</div>
+    <p class="must">한우불고기(1인) 시켜 먹기</p>
+    <div class="rows"><div class='r'><div class='k'>방문일 영업</div><div class='v'>00:00 ~ 24:00</div></div><div class='r'><div class='k'>주소</div><div class='v'>인천 서해구 청라루비로42번길 5-25 1층 (청라동)</div></div><div class='r'><div class='k'>전화</div><div class='v'><a class='tel' href='tel:0502-5554-6970'>0502-5554-6970</a></div></div><div class='r'><div class='k'>주차</div><div class='v'>주차 가능 (무료)<br><span class='sub'>무료 주차</span></div></div><div class='r'><div class='k'>리뷰 지표</div><div class='v'>카카오 ★4.4 · 리뷰 56 · 블로그 314 · 사진 2,530 · 인기도 74</div></div><div class='r'><div class='k'>장소 특징</div><div class='v'><span class='tag'>청라가족모임</span><span class='tag'>청라맛집</span><span class='tag'>청라점심</span><span class='tag'>청라주말외식</span><span class='tag'>청라회식</span><span class='tag'>24시간식당</span><span class='tag'>가족모임</span><span class='tag'>점심식사</span><span class='tag'>친목모임</span><span class='tag'>회식장소</span></div></div><div class='r'><div class='k'>취향 적합</div><div class='v'><div class='kscore'><b>69</b><span class='sub'> / 100</span></div><div class='kbars'><div class='krow'><div class='khead'><span class='klabel'>갈비</span><span class='kpts'>32점</span></div><div class='track'><div class='fill' style='width:32%'></div></div></div><div class='krow'><div class='khead'><span class='klabel'>기본점수</span><span class='kpts'>25점</span></div><div class='track'><div class='fill' style='width:25%'></div></div></div><div class='krow'><div class='khead'><span class='klabel'>관련 요소 (고기, 냉면, 만두)</span><span class='kpts'>12점</span></div><div class='track'><div class='fill' style='width:12%'></div></div></div></div><div class='knote'>초2 취향 키워드 점수 · 시설 안전성·이용 가능 확률을 뜻하지 않음</div></div></div><div class='r'><div class='k'>메뉴</div><div class='v'><ul class='menu'><li><span>한우불고기(1인)</span><b>25,000원</b></li><li><span>한우 보신전골(대)</span><b>75,000원</b></li><li><span>한우보신전골(소)</span><b>45,000원</b></li><li><span>한우 보신탕</span><b>15,000원</b></li></ul></div></div></div>
+    <p class='knote'><a href='https://place.map.kakao.com/1950333348#review' target='_blank' rel='noopener noreferrer'>사진·후기는 카카오맵 원문에서 보기 ↗</a></p><div class='maps'><a class='mbtn kakao' href='https://place.map.kakao.com/1950333348' target='_blank' rel='noopener noreferrer'>카카오맵</a><a class='mbtn naver' href='https://m.map.naver.com/search?query=%EC%84%9C%ED%95%B4%EA%B5%AC%20%EC%B2%AD%EB%9D%BC%EC%9A%B0%EC%82%AC%EB%AF%B8' target='_blank' rel='noopener noreferrer'>네이버 지도</a></div>
+  </section><section>
+    <div class="shead"><span class="chip" style="color:#48539B">카페 15:00</span>
+      <span class="dist">앞 코스에서 도로 2.1km · 약 4분</span></div>
+    <h2>퍼플패치</h2>
+    <div class="cat">카페</div>
+    <p class="must">테라스에 앉고 페페로니피자 시키기</p>
+    <div class="rows"><div class='r'><div class='k'>방문일 영업</div><div class='v'>10:00 ~ 22:00 <span class='sub'>· 라스트오더 21:00 라스트오더</span></div></div><div class='r'><div class='k'>주소</div><div class='v'>인천 서해구 중봉대로 610 마루힐프라자 12층 1201호 (청라동)</div></div><div class='r'><div class='k'>전화</div><div class='v'><a class='tel' href='tel:0507-1376-9687'>0507-1376-9687</a></div></div><div class='r'><div class='k'>주차</div><div class='v'>주차 가능 (무료)<br><span class='sub'>무료 주차</span></div></div><div class='r'><div class='k'>리뷰 지표</div><div class='v'>카카오 ★4.3 · 리뷰 17 · 블로그 155 · 사진 2,475 · 인기도 61</div></div><div class='r'><div class='k'>장소 특징</div><div class='v'><span class='tag'>대형카페</span><span class='tag'>브런치카페</span><span class='tag'>청라맛집</span><span class='tag'>청라브런치</span><span class='tag'>청라카페</span><span class='tag'>데이트코스</span><span class='tag'>루프탑있는</span><span class='tag'>친목모임</span><span class='tag'>캠핑느낌나는</span><span class='tag'>테라스가있는</span></div></div><div class='r'><div class='k'>취향 적합</div><div class='v'><div class='kscore'><b>81</b><span class='sub'> / 100</span></div><div class='kbars'><div class='krow'><div class='khead'><span class='klabel'>키즈</span><span class='kpts'>44점</span></div><div class='track'><div class='fill' style='width:44%'></div></div></div><div class='krow'><div class='khead'><span class='klabel'>기본점수</span><span class='kpts'>25점</span></div><div class='track'><div class='fill' style='width:25%'></div></div></div><div class='krow'><div class='khead'><span class='klabel'>관련 요소 (테라스, 대형카페, 루프탑)</span><span class='kpts'>12점</span></div><div class='track'><div class='fill' style='width:12%'></div></div></div></div><div class='knote'>초2 취향 키워드 점수 · 시설 안전성·이용 가능 확률을 뜻하지 않음</div></div></div><div class='r'><div class='k'>메뉴</div><div class='v'><ul class='menu'><li><span>페페로니피자</span><b>12,900원</b></li></ul></div></div></div>
+    <p class='knote'><a href='https://place.map.kakao.com/1932685318#review' target='_blank' rel='noopener noreferrer'>사진·후기는 카카오맵 원문에서 보기 ↗</a></p><div class='maps'><a class='mbtn kakao' href='https://place.map.kakao.com/1932685318' target='_blank' rel='noopener noreferrer'>카카오맵</a><a class='mbtn naver' href='https://m.place.naver.com/place/1544442785/home' target='_blank' rel='noopener noreferrer'>네이버 지도</a></div>
+  </section></details><details class='option' id='option-2' ><summary><span class='cat'>02 · 야외 · 자연·야외</span><h2>화랑유원지 코스</h2><span class='knote'>눌러서 코스 상세 보기</span></summary><div class='option-intro'><p class='must'>귀가 포함 약 60분 · 도로 기준 추정 · 실시간 정체 미반영</p><p>09~18시 20~27°C · 강수확률 최대 20%</p><p class='knote'>기상청 단기예보 · 조회 2026-09-26T07:02:59+09:00</p><p>PM10 11 · PM2.5 5µg/m³</p><p class='knote'>에어코리아 중앙대로(고잔동) · 관측 2026-09-26 06:00</p><p class='knote'>· 활동 10:30 · 식사 12:30 · 카페 15:00 도착 제안 시각 기준으로 영업시간 확인 · 체류시간·정체에 따라 조정 필요</p><p class='knote'>· 영업시간은 지도 등록 정보 기준 · 임시휴무·현장 대기·잔여 예약석은 실시간 확인되지 않음</p><p class='knote'>· 일부 장소의 영업시간 정보 없음</p></div><section>
+    <div class="shead"><span class="chip" style="color:#2F6F52">활동 10:30</span>
+      <span class="dist">만수역에서 도로 20.7km · 약 24분</span></div>
+    <h2>화랑유원지</h2>
+    <div class="cat">유원지</div>
+    <p class="must">유원지 둘러보기</p>
+    <div class="rows"><div class='r'><div class='k'>주소</div><div class='v'>경기 안산시 단원구 동산로 268 (초지동)</div></div><div class='r'><div class='k'>전화</div><div class='v'><a class='tel' href='tel:031-487-7780'>031-487-7780</a></div></div><div class='r'><div class='k'>주차</div><div class='v'>주차 가능 (무료)<br><span class='sub'>화랑유원지 내 제1~제3 무료 주차장 운영, 야외 공영주차장 이용 가능, 주말 피크타임 경기도미술관 및 산업역사박물관 인근 주차장 활용 가능</span></div></div><div class='r'><div class='k'>리뷰 지표</div><div class='v'>카카오 ★4.6 · 리뷰 53 · 블로그 184 · 사진 1,185 · 인기도 66</div></div><div class='r'><div class='k'>아이</div><div class='v'><span class='tag kid'>아이와놀자</span></div></div><div class='r'><div class='k'>장소 특징</div><div class='v'><span class='tag'>단풍명소</span><span class='tag'>러닝</span><span class='tag'>맨발걷기</span><span class='tag'>벚꽃명소</span><span class='tag'>벚꽃지도</span><span class='tag'>산책로</span><span class='tag'>억새밭</span><span class='tag'>포토존</span><span class='tag'>핑크뮬리명소</span></div></div><div class='r'><div class='k'>취향 적합</div><div class='v'><div class='kscore'><b>71</b><span class='sub'> / 100</span></div><div class='kbars'><div class='krow'><div class='khead'><span class='klabel'>유원지</span><span class='kpts'>42점</span></div><div class='track'><div class='fill' style='width:42%'></div></div></div><div class='krow'><div class='khead'><span class='klabel'>기본점수</span><span class='kpts'>25점</span></div><div class='track'><div class='fill' style='width:25%'></div></div></div><div class='krow'><div class='khead'><span class='klabel'>관련 요소 (산책)</span><span class='kpts'>4점</span></div><div class='track'><div class='fill' style='width:4%'></div></div></div></div><div class='knote'>초2 취향 키워드 점수 · 시설 안전성·이용 가능 확률을 뜻하지 않음</div></div></div><div class='r'><div class='k'>아이 근거</div><div class='v'><ul class='ev'><li>태그: 아이와놀자</li></ul></div></div></div>
+    <p class='knote'><a href='https://place.map.kakao.com/8691040#review' target='_blank' rel='noopener noreferrer'>사진·후기는 카카오맵 원문에서 보기 ↗</a></p><div class='maps'><a class='mbtn kakao' href='https://place.map.kakao.com/8691040' target='_blank' rel='noopener noreferrer'>카카오맵</a><a class='mbtn naver' href='https://m.map.naver.com/search?query=%EC%95%88%EC%82%B0%EC%8B%9C%20%ED%99%94%EB%9E%91%EC%9C%A0%EC%9B%90%EC%A7%80' target='_blank' rel='noopener noreferrer'>네이버 지도</a></div>
+  </section><section>
+    <div class="shead"><span class="chip" style="color:#A85A1E">식사 12:30</span>
+      <span class="dist">앞 코스에서 도로 4.3km · 약 9분</span></div>
+    <h2>상무초밥 안산중앙점</h2>
+    <div class="cat">초밥,롤</div>
+    <p class="must">아이 메뉴 어린이초밥(8p) 확인하고 식사하기</p>
+    <div class="rows"><div class='r'><div class='k'>방문일 영업</div><div class='v'>11:00 ~ 21:50 <span class='sub'>· 라스트오더 21:30 라스트오더</span></div></div><div class='r'><div class='k'>주소</div><div class='v'>경기 안산시 단원구 당곡로 10 1층 (고잔동)</div></div><div class='r'><div class='k'>전화</div><div class='v'><a class='tel' href='tel:031-480-3380'>031-480-3380</a></div></div><div class='r'><div class='k'>주차</div><div class='v'>주차 가능<br><span class='sub'>주차 공간 마련되어 있어 차 이용 편리</span></div></div><div class='r'><div class='k'>리뷰 지표</div><div class='v'>카카오 ★4.2 · 리뷰 133 · 블로그 457 · 사진 1,500 · 인기도 76</div></div><div class='r'><div class='k'>장소 특징</div><div class='v'><span class='tag'>데이트코스</span><span class='tag'>점심특선</span><span class='tag'>회식장소</span></div></div><div class='r'><div class='k'>취향 적합</div><div class='v'><div class='kscore'><b>77</b><span class='sub'> / 100</span></div><div class='kbars'><div class='krow'><div class='khead'><span class='klabel'>돈까스</span><span class='kpts'>40점</span></div><div class='track'><div class='fill' style='width:40%'></div></div></div><div class='krow'><div class='khead'><span class='klabel'>기본점수</span><span class='kpts'>25점</span></div><div class='track'><div class='fill' style='width:25%'></div></div></div><div class='krow'><div class='khead'><span class='klabel'>관련 요소 (치킨, 고기, 구이)</span><span class='kpts'>12점</span></div><div class='track'><div class='fill' style='width:12%'></div></div></div></div><div class='knote'>초2 취향 키워드 점수 · 시설 안전성·이용 가능 확률을 뜻하지 않음</div></div></div><div class='r'><div class='k'>메뉴</div><div class='v'><ul class='menu'><li><span>어린이초밥(8p)</span><b>9,000원</b></li><li><span>연어초밥</span><b>2,200원</b></li><li><span>소고기불초밥</span><b>2,200원</b></li><li><span>참치초밥(10p)</span><b>21,000원</b></li></ul></div></div></div>
+    <p class='knote'><a href='https://place.map.kakao.com/647035318#review' target='_blank' rel='noopener noreferrer'>사진·후기는 카카오맵 원문에서 보기 ↗</a></p><div class='maps'><a class='mbtn kakao' href='https://place.map.kakao.com/647035318' target='_blank' rel='noopener noreferrer'>카카오맵</a><a class='mbtn naver' href='https://m.map.naver.com/search?query=%EC%95%88%EC%82%B0%EC%8B%9C%20%EC%83%81%EB%AC%B4%EC%B4%88%EB%B0%A5%20%EC%95%88%EC%82%B0%EC%A4%91%EC%95%99%EC%A0%90' target='_blank' rel='noopener noreferrer'>네이버 지도</a></div>
+  </section><section>
+    <div class="shead"><span class="chip" style="color:#48539B">카페 15:00</span>
+      <span class="dist">앞 코스에서 도로 2.0km · 약 4분</span></div>
+    <h2>예당카페</h2>
+    <div class="cat">카페</div>
+    <p class="must">샐러드 피자 (프레시한 맛이 일품인 부담스럽지 않은 피자) 시키기</p>
+    <div class="rows"><div class='r'><div class='k'>방문일 영업</div><div class='v'>09:00 ~ 22:00 <span class='sub'>· 라스트오더 21:30 라스트오더</span></div></div><div class='r'><div class='k'>주소</div><div class='v'>경기 안산시 단원구 화랑로 312 (고잔동)</div></div><div class='r'><div class='k'>전화</div><div class='v'><a class='tel' href='tel:031-475-8300'>031-475-8300</a></div></div><div class='r'><div class='k'>주차</div><div class='v'>주차 가능 (무료)<br><span class='sub'>예술의 전당 주차장 무료 이용 가능</span></div></div><div class='r'><div class='k'>리뷰 지표</div><div class='v'>카카오 ★4.1 · 리뷰 9 · 블로그 79 · 사진 1,291 · 인기도 53</div></div><div class='r'><div class='k'>장소 특징</div><div class='v'><span class='tag'>대형카페</span><span class='tag'>베이커리카페</span><span class='tag'>분위기좋은</span><span class='tag'>야외정원</span><span class='tag'>힐링카페</span></div></div><div class='r'><div class='k'>취향 적합</div><div class='v'><div class='kscore'><b>81</b><span class='sub'> / 100</span></div><div class='kbars'><div class='krow'><div class='khead'><span class='klabel'>키즈</span><span class='kpts'>44점</span></div><div class='track'><div class='fill' style='width:44%'></div></div></div><div class='krow'><div class='khead'><span class='klabel'>기본점수</span><span class='kpts'>25점</span></div><div class='track'><div class='fill' style='width:25%'></div></div></div><div class='krow'><div class='khead'><span class='klabel'>관련 요소 (정원, 야외, 테라스)</span><span class='kpts'>12점</span></div><div class='track'><div class='fill' style='width:12%'></div></div></div></div><div class='knote'>초2 취향 키워드 점수 · 시설 안전성·이용 가능 확률을 뜻하지 않음</div></div></div><div class='r'><div class='k'>메뉴</div><div class='v'><ul class='menu'><li><span>샐러드 피자 (프레시한 맛이 일품인 부담스럽지 않은 피자)</span><b>17,000원</b></li></ul></div></div></div>
+    <p class='knote'><a href='https://place.map.kakao.com/558162701#review' target='_blank' rel='noopener noreferrer'>사진·후기는 카카오맵 원문에서 보기 ↗</a></p><div class='maps'><a class='mbtn kakao' href='https://place.map.kakao.com/558162701' target='_blank' rel='noopener noreferrer'>카카오맵</a><a class='mbtn naver' href='https://m.place.naver.com/place/1513941462/home' target='_blank' rel='noopener noreferrer'>네이버 지도</a></div>
+  </section></details><details class='option' id='option-3' ><summary><span class='cat'>03 · 실내 · 관람·배움</span><h2>인천어린이박물관 코스</h2><span class='knote'>눌러서 코스 상세 보기</span></summary><div class='option-intro'><p class='must'>귀가 포함 약 28분 · 도로 기준 추정 · 실시간 정체 미반영</p><p>09~18시 21~27°C · 강수확률 최대 20%</p><p class='knote'>기상청 단기예보 · 조회 2026-09-26T07:04:15+09:00</p><p>PM10 11 · PM2.5 9µg/m³</p><p class='knote'>에어코리아 숭의 · 관측 2026-09-26 06:00</p><p class='knote'>· 활동 10:30 · 식사 12:30 · 카페 15:00 도착 제안 시각 기준으로 영업시간 확인 · 체류시간·정체에 따라 조정 필요</p><p class='knote'>· 영업시간은 지도 등록 정보 기준 · 임시휴무·현장 대기·잔여 예약석은 실시간 확인되지 않음</p></div><section>
+    <div class="shead"><span class="chip" style="color:#2F6F52">활동 10:30</span>
+      <span class="dist">만수역에서 도로 6.3km · 약 10분</span></div>
+    <h2>인천어린이박물관</h2>
+    <div class="cat">박물관</div>
+    <p class="must">전시 관람하기 · 체험 프로그램은 별도 운영 확인</p>
+    <div class="rows"><div class='r'><div class='k'>방문일 영업</div><div class='v'>10:00 ~ 18:00</div></div><div class='r'><div class='k'>주소</div><div class='v'>인천 미추홀구 매소홀로 618 문학경기장내 (문학동)</div></div><div class='r'><div class='k'>전화</div><div class='v'><a class='tel' href='tel:032-432-5600'>032-432-5600</a></div></div><div class='r'><div class='k'>주차</div><div class='v'>주차 가능<br><span class='sub'>인천문학경기장 주차장 이용 시 출차 시 2,000원 결제, 박물관 맞은편 실외 주차장 활용 가능, 주말에도 주차 수월</span></div></div><div class='r'><div class='k'>리뷰 지표</div><div class='v'>카카오 ★2.9 · 리뷰 18 · 블로그 153 · 사진 1,893 · 인기도 50</div></div><div class='r'><div class='k'>아이</div><div class='v'><span class='tag kid'>아이와체험</span><span class='tag kid'>어린이박물관</span><span class='tag kid'>어린이체험</span></div></div><div class='r'><div class='k'>장소 특징</div><div class='v'><span class='tag'>공룡체험</span><span class='tag'>과학공작소</span><span class='tag'>과학체험</span><span class='tag'>문화비소득공제</span><span class='tag'>문화예술공간</span><span class='tag'>민속놀이체험</span><span class='tag'>비올때아이랑</span><span class='tag'>실내놀이터</span><span class='tag'>악기체험</span><span class='tag'>인형극</span><span class='tag'>입체영상관</span><span class='tag'>체험미술</span><span class='tag'>현장체험학습</span></div></div><div class='r'><div class='k'>취향 적합</div><div class='v'><div class='kscore'><b>83</b><span class='sub'> / 100</span></div><div class='kbars'><div class='krow'><div class='khead'><span class='klabel'>실내놀이터</span><span class='kpts'>46점</span></div><div class='track'><div class='fill' style='width:46%'></div></div></div><div class='krow'><div class='khead'><span class='klabel'>기본점수</span><span class='kpts'>25점</span></div><div class='track'><div class='fill' style='width:25%'></div></div></div><div class='krow'><div class='khead'><span class='klabel'>관련 요소 (놀이터, 공작, 체험)</span><span class='kpts'>12점</span></div><div class='track'><div class='fill' style='width:12%'></div></div></div></div><div class='knote'>초2 취향 키워드 점수 · 시설 안전성·이용 가능 확률을 뜻하지 않음</div></div></div><div class='r'><div class='k'>아이 근거</div><div class='v'><ul class='ev'><li>장소명에 &#x27;어린이&#x27;</li><li>태그: 아이와체험</li><li>태그: 어린이박물관</li><li>태그: 어린이체험</li></ul></div></div></div>
+    <p class='knote'><a href='https://place.map.kakao.com/11167305#review' target='_blank' rel='noopener noreferrer'>사진·후기는 카카오맵 원문에서 보기 ↗</a></p><div class='maps'><a class='mbtn kakao' href='https://place.map.kakao.com/11167305' target='_blank' rel='noopener noreferrer'>카카오맵</a><a class='mbtn naver' href='https://m.place.naver.com/place/12323916/home' target='_blank' rel='noopener noreferrer'>네이버 지도</a></div>
+  </section><section>
+    <div class="shead"><span class="chip" style="color:#A85A1E">식사 12:30</span>
+      <span class="dist">앞 코스에서 도로 4.1km · 약 7분</span></div>
+    <h2>청실홍실 주안직영점</h2>
+    <div class="cat">국수</div>
+    <p class="must">모밀국수 시켜 먹기</p>
+    <div class="rows"><div class='r'><div class='k'>방문일 영업</div><div class='v'>11:20 ~ 21:00</div></div><div class='r'><div class='k'>주소</div><div class='v'>인천 미추홀구 미추홀대로 697 1층 (주안동)</div></div><div class='r'><div class='k'>전화</div><div class='v'><a class='tel' href='tel:032-876-5868'>032-876-5868</a></div></div><div class='r'><div class='k'>주차</div><div class='v'>주차 가능 (무료)<br><span class='sub'>매장 뒷쪽 4~5대 주차 가능, 근처 주안 주차장 1시간 무료 주차 지원</span></div></div><div class='r'><div class='k'>리뷰 지표</div><div class='v'>카카오 ★4.1 · 리뷰 75 · 블로그 437 · 사진 1,672 · 인기도 74</div></div><div class='r'><div class='k'>취향 적합</div><div class='v'><div class='kscore'><b>65</b><span class='sub'> / 100</span></div><div class='kbars'><div class='krow'><div class='khead'><span class='klabel'>칼국수</span><span class='kpts'>28점</span></div><div class='track'><div class='fill' style='width:28%'></div></div></div><div class='krow'><div class='khead'><span class='klabel'>기본점수</span><span class='kpts'>25점</span></div><div class='track'><div class='fill' style='width:25%'></div></div></div><div class='krow'><div class='khead'><span class='klabel'>관련 요소 (국수, 만두, 한식)</span><span class='kpts'>12점</span></div><div class='track'><div class='fill' style='width:12%'></div></div></div></div><div class='knote'>초2 취향 키워드 점수 · 시설 안전성·이용 가능 확률을 뜻하지 않음</div></div></div><div class='r'><div class='k'>메뉴</div><div class='v'><ul class='menu'><li><span>모밀국수</span><b>7,500원</b></li><li><span>모밀비빔국수</span><b>7,500원</b></li></ul></div></div></div>
+    <p class='knote'><a href='https://place.map.kakao.com/16075359#review' target='_blank' rel='noopener noreferrer'>사진·후기는 카카오맵 원문에서 보기 ↗</a></p><div class='maps'><a class='mbtn kakao' href='https://place.map.kakao.com/16075359' target='_blank' rel='noopener noreferrer'>카카오맵</a><a class='mbtn naver' href='https://m.place.naver.com/place/13570881/home' target='_blank' rel='noopener noreferrer'>네이버 지도</a></div>
+  </section><section>
+    <div class="shead"><span class="chip" style="color:#48539B">카페 15:00</span>
+      <span class="dist">앞 코스에서 도로 2.0km · 약 3분</span></div>
+    <h2>타이니닷</h2>
+    <div class="cat">카페</div>
+    <p class="must">테라스에 앉기</p>
+    <div class="rows"><div class='r'><div class='k'>방문일 영업</div><div class='v'>11:00 ~ 20:30</div></div><div class='r'><div class='k'>주소</div><div class='v'>인천 미추홀구 주승로96번길 1 1층 (주안동)</div></div><div class='r'><div class='k'>주차</div><div class='v'>주차 가능 (무료)<br><span class='sub'>건물 앞 전용 주차장 4~5대 주차 가능, 무료 주차 공간 넓음</span></div></div><div class='r'><div class='k'>리뷰 지표</div><div class='v'>카카오 ★4.7 · 리뷰 16 · 블로그 550 · 사진 2,772 · 인기도 71</div></div><div class='r'><div class='k'>장소 특징</div><div class='v'><span class='tag'>감성카페</span><span class='tag'>디저트카페</span><span class='tag'>로스팅전문</span><span class='tag'>애견동반카페</span><span class='tag'>주차가능카페</span><span class='tag'>카공카페</span><span class='tag'>핸드드립전문점</span></div></div><div class='r'><div class='k'>취향 적합</div><div class='v'><div class='kscore'><b>73</b><span class='sub'> / 100</span></div><div class='kbars'><div class='krow'><div class='khead'><span class='klabel'>테라스</span><span class='kpts'>36점</span></div><div class='track'><div class='fill' style='width:36%'></div></div></div><div class='krow'><div class='khead'><span class='klabel'>기본점수</span><span class='kpts'>25점</span></div><div class='track'><div class='fill' style='width:25%'></div></div></div><div class='krow'><div class='khead'><span class='klabel'>관련 요소 (디저트, 아이스크림, 케이크)</span><span class='kpts'>12점</span></div><div class='track'><div class='fill' style='width:12%'></div></div></div></div><div class='knote'>초2 취향 키워드 점수 · 시설 안전성·이용 가능 확률을 뜻하지 않음</div></div></div></div>
+    <p class='knote'><a href='https://place.map.kakao.com/1040544715#review' target='_blank' rel='noopener noreferrer'>사진·후기는 카카오맵 원문에서 보기 ↗</a></p><div class='maps'><a class='mbtn kakao' href='https://place.map.kakao.com/1040544715' target='_blank' rel='noopener noreferrer'>카카오맵</a><a class='mbtn naver' href='https://m.place.naver.com/place/1884814180/home' target='_blank' rel='noopener noreferrer'>네이버 지도</a></div>
+  </section></details><details class='option' id='option-4' ><summary><span class='cat'>04 · 야외 · 자연·야외</span><h2>용도수목원 코스</h2><span class='knote'>눌러서 코스 상세 보기</span></summary><div class='option-intro'><p class='must'>귀가 포함 약 40분 · 도로 기준 추정 · 실시간 정체 미반영</p><p>09~18시 21~27°C · 강수확률 최대 20%</p><p class='knote'>기상청 단기예보 · 조회 2026-09-26T07:05:29+09:00</p><p>PM10 17 · PM2.5 11µg/m³</p><p class='knote'>에어코리아 정왕동 · 관측 2026-09-26 06:00</p><p class='knote'>· 활동 10:30 · 식사 12:30 · 카페 15:00 도착 제안 시각 기준으로 영업시간 확인 · 체류시간·정체에 따라 조정 필요</p><p class='knote'>· 영업시간은 지도 등록 정보 기준 · 임시휴무·현장 대기·잔여 예약석은 실시간 확인되지 않음</p><p class='knote'>· 일부 장소의 영업시간 정보 없음</p></div><section>
+    <div class="shead"><span class="chip" style="color:#2F6F52">활동 10:30</span>
+      <span class="dist">만수역에서 도로 10.8km · 약 14분</span></div>
+    <h2>용도수목원</h2>
+    <div class="cat">수목원,식물원</div>
+    <p class="must">수목원,식물원 둘러보기</p>
+    <div class="rows"><div class='r'><div class='k'>주소</div><div class='v'>경기 시흥시 밭뒤길 32 (매화동)</div></div><div class='r'><div class='k'>전화</div><div class='v'><a class='tel' href='tel:031-313-9090'>031-313-9090</a></div></div><div class='r'><div class='k'>주차</div><div class='v'>주차 가능 (무료)<br><span class='sub'>용도수목원 전용 주차장 이용 가능, 무료 주차</span></div></div><div class='r'><div class='k'>리뷰 지표</div><div class='v'>카카오 ★2.4 · 리뷰 22 · 블로그 79 · 사진 1,647 · 인기도 43</div></div><div class='r'><div class='k'>장소 특징</div><div class='v'><span class='tag'>나들이</span><span class='tag'>산책로</span><span class='tag'>포토존</span><span class='tag'>핑크뮬리명소</span></div></div><div class='r'><div class='k'>취향 적합</div><div class='v'><div class='kscore'><b>51</b><span class='sub'> / 100</span></div><div class='kbars'><div class='krow'><div class='khead'><span class='klabel'>기본점수</span><span class='kpts'>25점</span></div><div class='track'><div class='fill' style='width:25%'></div></div></div><div class='krow'><div class='khead'><span class='klabel'>수목원</span><span class='kpts'>22점</span></div><div class='track'><div class='fill' style='width:22%'></div></div></div><div class='krow'><div class='khead'><span class='klabel'>관련 요소 (산책)</span><span class='kpts'>4점</span></div><div class='track'><div class='fill' style='width:4%'></div></div></div></div><div class='knote'>초2 취향 키워드 점수 · 시설 안전성·이용 가능 확률을 뜻하지 않음</div></div></div></div>
+    <p class='knote'><a href='https://place.map.kakao.com/8030600#review' target='_blank' rel='noopener noreferrer'>사진·후기는 카카오맵 원문에서 보기 ↗</a></p><div class='maps'><a class='mbtn kakao' href='https://place.map.kakao.com/8030600' target='_blank' rel='noopener noreferrer'>카카오맵</a><a class='mbtn naver' href='https://m.place.naver.com/place/11543372/home' target='_blank' rel='noopener noreferrer'>네이버 지도</a></div>
+  </section><section>
+    <div class="shead"><span class="chip" style="color:#A85A1E">식사 12:30</span>
+      <span class="dist">앞 코스에서 도로 1.7km · 약 7분</span></div>
+    <h2>뜰</h2>
+    <div class="cat">양식</div>
+    <p class="must">가지 치즈롤 시켜 먹기</p>
+    <div class="rows"><div class='r'><div class='k'>방문일 영업</div><div class='v'>10:30 ~ 20:00 <span class='sub'>· 라스트오더 19:00 라스트오더</span></div></div><div class='r'><div class='k'>주소</div><div class='v'>경기 시흥시 수인로 2883 1-2층 (도창동)</div></div><div class='r'><div class='k'>전화</div><div class='v'><a class='tel' href='tel:0505-988-5982'>0505-988-5982</a></div></div><div class='r'><div class='k'>주차</div><div class='v'>주차 가능 (무료)<br><span class='sub'>무료 주차</span></div></div><div class='r'><div class='k'>리뷰 지표</div><div class='v'>카카오 ★5.0 · 리뷰 9 · 블로그 70 · 사진 1,750 · 인기도 59</div></div><div class='r'><div class='k'>장소 특징</div><div class='v'><span class='tag'>브런치카페</span><span class='tag'>비스트로</span></div></div><div class='r'><div class='k'>취향 적합</div><div class='v'><div class='kscore'><b>75</b><span class='sub'> / 100</span></div><div class='kbars'><div class='krow'><div class='khead'><span class='klabel'>피자</span><span class='kpts'>38점</span></div><div class='track'><div class='fill' style='width:38%'></div></div></div><div class='krow'><div class='khead'><span class='klabel'>기본점수</span><span class='kpts'>25점</span></div><div class='track'><div class='fill' style='width:25%'></div></div></div><div class='krow'><div class='khead'><span class='klabel'>관련 요소 (치킨, 파스타, 떡볶이)</span><span class='kpts'>12점</span></div><div class='track'><div class='fill' style='width:12%'></div></div></div></div><div class='knote'>초2 취향 키워드 점수 · 시설 안전성·이용 가능 확률을 뜻하지 않음</div></div></div><div class='r'><div class='k'>메뉴</div><div class='v'><ul class='menu'><li><span>가지 치즈롤</span><b>15,000원</b></li><li><span>뜰 브런치</span><b>24,000원</b></li></ul></div></div></div>
+    <p class='knote'><a href='https://place.map.kakao.com/1203043778#review' target='_blank' rel='noopener noreferrer'>사진·후기는 카카오맵 원문에서 보기 ↗</a></p><div class='maps'><a class='mbtn kakao' href='https://place.map.kakao.com/1203043778' target='_blank' rel='noopener noreferrer'>카카오맵</a><a class='mbtn naver' href='https://m.place.naver.com/place/1959148276/home' target='_blank' rel='noopener noreferrer'>네이버 지도</a></div>
+  </section><section>
+    <div class="shead"><span class="chip" style="color:#48539B">카페 15:00</span>
+      <span class="dist">앞 코스에서 도로 1.2km · 약 3분</span></div>
+    <h2>포시즌베이커리카페</h2>
+    <div class="cat">카페</div>
+    <p class="must">정원 걷고 땅콩크림라떼 시키기</p>
+    <div class="rows"><div class='r'><div class='k'>방문일 영업</div><div class='v'>10:00 ~ 22:00 <span class='sub'>· 라스트오더 21:30 라스트오더</span></div></div><div class='r'><div class='k'>주소</div><div class='v'>경기 시흥시 수인로 2950-30 1-3층 (매화동)</div></div><div class='r'><div class='k'>전화</div><div class='v'><a class='tel' href='tel:031-311-9111'>031-311-9111</a></div></div><div class='r'><div class='k'>주차</div><div class='v'>주차 가능 (무료)<br><span class='sub'>무료 주차</span></div></div><div class='r'><div class='k'>리뷰 지표</div><div class='v'>카카오 ★3.5 · 리뷰 21 · 블로그 150 · 사진 2,380 · 인기도 55</div></div><div class='r'><div class='k'>장소 특징</div><div class='v'><span class='tag'>베이커리카페</span><span class='tag'>식물카페</span><span class='tag'>애견동반카페</span><span class='tag'>야외정원</span></div></div><div class='r'><div class='k'>취향 적합</div><div class='v'><div class='kscore'><b>77</b><span class='sub'> / 100</span></div><div class='kbars'><div class='krow'><div class='khead'><span class='klabel'>정원</span><span class='kpts'>40점</span></div><div class='track'><div class='fill' style='width:40%'></div></div></div><div class='krow'><div class='khead'><span class='klabel'>기본점수</span><span class='kpts'>25점</span></div><div class='track'><div class='fill' style='width:25%'></div></div></div><div class='krow'><div class='khead'><span class='klabel'>관련 요소 (야외, 테라스, 베이커리)</span><span class='kpts'>12점</span></div><div class='track'><div class='fill' style='width:12%'></div></div></div></div><div class='knote'>초2 취향 키워드 점수 · 시설 안전성·이용 가능 확률을 뜻하지 않음</div></div></div><div class='r'><div class='k'>메뉴</div><div class='v'><ul class='menu'><li><span>땅콩크림라떼</span><b>8,000원</b></li><li><span>레몬에이드</span><b>7,000원</b></li><li><span>소금빵</span></li></ul></div></div></div>
+    <p class='knote'><a href='https://place.map.kakao.com/2006788057#review' target='_blank' rel='noopener noreferrer'>사진·후기는 카카오맵 원문에서 보기 ↗</a></p><div class='maps'><a class='mbtn kakao' href='https://place.map.kakao.com/2006788057' target='_blank' rel='noopener noreferrer'>카카오맵</a><a class='mbtn naver' href='https://m.place.naver.com/place/2032419567/home' target='_blank' rel='noopener noreferrer'>네이버 지도</a></div>
+  </section></details>
+  <footer>생성 2026-09-26T07:06:37+09:00<br>
+    도로 경로: <a href="https://project-osrm.org/">OSRM</a> / <a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors</a><br>
+    예보: 기상청 / <a href="https://open-meteo.com/">Open-Meteo</a> (CC BY 4.0)</footer>
+</div>
+</body></html>
